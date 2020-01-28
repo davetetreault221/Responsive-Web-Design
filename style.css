@@ -11,6 +11,10 @@ body{
     display: none;
 }
 
+.mob-nav {
+    display: none;
+}
+
 .container {
 
     min-height: 500px;
