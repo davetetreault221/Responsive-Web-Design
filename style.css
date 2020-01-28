@@ -1,0 +1,179 @@
+/* Global View */
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgb(190, 147, 117);
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+.container {
+
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container {
+    background-color: rgb(59, 20, 18);
+    min-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    text-align: left;
+}
+
+header {
+    /* background-color: blueviolet; */
+    display: flex;
+    max-width: 1024px;
+    min-height: 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    background-color: rgb(238, 45, 123);
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p {
+
+    font-size: 0.875rem;
+    padding: 10px 10px;
+    line-height: 1.5rem;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.myButton {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.bold {
+    font-weight: bold;
+    color: rgb(238, 45, 123);
+
+}
+
+/* Tablet View */
+@media (max-width: 768px)
+{
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 20px; 
+    }
+
+    .burger-menu {
+        width: 50px;
+    }
+
+    .col{
+        width: 45%;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .logo{
+        padding: 40px 0;
+        text-align: center;
+        width: 60%;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+        background-color: rgb(238, 45, 123);
+        padding: 15px 30px;
+        margin-left: -60px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+    }
+}
+
+/* Mobile View */
+
+@media (max-width: 500px)
+{
+    .col{
+        width: 100%;
+    }
+
+    /* header {
+        display: block;
+        text-align: center;
+    } */
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .logo{
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .myButton {
+        margin:0;
+    }
+
+}
