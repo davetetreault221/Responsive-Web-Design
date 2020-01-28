@@ -137,8 +137,10 @@ header {
     }
 
     .mob-nav {
-        display: none;
+        display: flex;
+        flex-direction: column;
         position: absolute;
+        right: 5px;
     }
 }
 
@@ -149,11 +151,6 @@ header {
     .col{
         width: 100%;
     }
-
-    /* header {
-        display: block;
-        text-align: center;
-    } */
 
     .container {
         padding-top: 40px;
